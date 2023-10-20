@@ -3,7 +3,6 @@
  * @date 6th January, 2020
  */
 import h from './helpers.js';
-import socket from '../../ws/stream.js';
 
 window.addEventListener('load', ()=>{
     const room = h.getQString(location.href, 'room');
@@ -26,7 +25,7 @@ window.addEventListener('load', ()=>{
 
         var pc = [];
 
-        socket = io('./stream');
+        let socket = io('/stream');
 
         var socketId = '';
         var myStream = '';
