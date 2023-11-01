@@ -15,3 +15,4 @@ console.log(__dirname);
 io.of('/stream').on('connection', stream);
 
 server.listen(3000);
+io.listen(4000);
